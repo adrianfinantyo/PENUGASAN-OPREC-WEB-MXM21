@@ -1,0 +1,40 @@
+body {
+    background-color: grey;
+}
+.container{
+    width: 98%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.col{
+    position: relative;
+    width: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.col-half{
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.col-full{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.row{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+p {
+    text-align: justify;
+}

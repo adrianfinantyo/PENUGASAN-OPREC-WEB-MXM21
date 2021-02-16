@@ -4,45 +4,55 @@
         <!-- Title -->
         <title> Today Quotes </title>
         <!-- Logo -->
-        <link rel="shortcut icon" href="">
+        <link rel="shortcut icon" href="img/logo.png">
         <!-- CSS -->
         <link rel="stylesheet" href="css/style.css">
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     </head>
-    <body>
-        <div class="background">
-            <div class="container center">
-                <div class="row h-100">
-                    <div class="col-12 my-auto">
-                        <div class="card bg-info text-white">
-                            <div class="card-header">
-                                <h5>Quotes</h5>
-                            </div>
-                            <div class="card-body">
-                                <div id="quote">
-                                    <!-- Quotes will reveal here -->
-                                </div>
-                                <div id="author">
-                                    <!-- Author will reveal here -->
-                                </div>
-                            </div>
-                            <div class="card-footer">
-                                <h5>tags:</h5>
-                                <div id="tags">
-                                    <!-- Tags will reveal here -->
-                                </div>
+    <body style="background-image: url(img/bg.jpg);
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;">
+        <div class="container center">
+            <div class="row h-100">
+                <div class="col-12 my-auto">
+                    <div class="card bg-dark text-white";>
+                        <div class="card-header">
+                            <h5>Today Quotes for You:</h5>
+                        </div>
+                        <div class="card-body" style="padding-top: 50px; padding-bottom: 50px;">
+                            <div id="quote">
+                                <!-- Quotes will reveal here -->
+                            </div><br>
+                            <div id="author">
+                                <!-- Author will reveal here -->
                             </div>
                         </div>
-                        <div class="text-center">
-                            <button id="btn" type="button" class="btn btn-danger" onclick="generateQuote()">Next Quotes</button>
-                            <button id="btn" type="button" class="btn btn-primary" onclick="generateQuote()">Tweet Quotes</button>
+                        <div class="card-footer">
+                            <h5>tags:</h5>
+                            <div id="tags">
+                                <!-- Tags will reveal here -->
+                            </div>
                         </div>
+                    </div>
+                    <div class="text-center">
+                        <button id="btn" type="button" class="btn btn-danger" onclick="generateQuote()">Next Quotes</button>
+                        <button id="btn" type="button" class="btn btn-primary" onclick="tweetQuotes()">Tweet Quotes</button>
                     </div>
                 </div>
             </div>
         </div>
     </body>
+    <footer class="footer">
+        <div class="container">
+            <div class="text-center">
+                © 2021 Copyright: Adrian Finantyo.
+                <b><a class="text-light" target="blank" href="https://github.com/adrianfinantyo?tab=repositories">Visit me on Github</a></b>
+            </div>
+           
+        </div>
+    </footer>
     <!-- JS script -->
     <script src="js/app.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
